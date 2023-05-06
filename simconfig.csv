@@ -1,0 +1,5 @@
+stime,2021-04-01 00:00:00,etime,2022-04-30 23:00:00,use_multiple_threads,1,bar_freq,60
+SimSample1,Algo1,close_price_path,Close.csv
+SimSample2,Algo1,close_price_path,Close.csv
+SimSample3,Algo2,close_price_path,Close.csv,maw,5
+SimSample4,Algo2,close_price_path,Close.csv,maw,10
