@@ -55,7 +55,7 @@ void parseSimConfig(
 }
 
 int main(int argc, char *argv[]) {
-    std::string simconfigpath = "simconfig.csv"; 
+    std::string simconfigpath = "Simconfig.csv"; 
     std::unordered_map<std::string, AlgoParams> algoParams;
     std::unordered_map<std::string, std::string> globalParams;
     parseSimConfig(simconfigpath, globalParams, algoParams);
