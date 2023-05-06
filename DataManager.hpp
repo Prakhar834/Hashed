@@ -16,8 +16,5 @@ class DataManager {
         DataManager(std::string path);
         void loadData(std::string path);
         int getIndex(std::string ts);
-        // const std::vector<double> getValues(std::string ts) 
-        // const std::vector<double> getValues(int index)
-
 };
 #endif
