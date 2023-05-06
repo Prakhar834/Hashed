@@ -51,6 +51,15 @@ void DataManager::loadData(std::string path) {
     }
 }
 
+//Read only reference passed for strategies to work on
+const std::vector<std::vector<double>>& DataManager::getValues() {
+    return values;
+}
+
+std::vector<std::string> DataManager::getColumns() {
+    return columns;
+}
+
 int DataManager::getIndex(std::string ts) {
     if (ts_index.find(ts) == ts_index.end()) {
         return -1;
