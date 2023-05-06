@@ -56,6 +56,10 @@ void parseSimConfig(
 
 int main(int argc, char *argv[]) {
     std::string simconfigpath = "Simconfig.csv"; 
+    if (argc == 2) {
+        simconfigpath = std::string(argv[1]);
+        std::cout << "Read simconfig path from cmd arg: " << simconfigpath << std::endl;
+    }
     std::unordered_map<std::string, AlgoParams> algoParams;
     std::unordered_map<std::string, std::string> globalParams;
     parseSimConfig(simconfigpath, globalParams, algoParams);
